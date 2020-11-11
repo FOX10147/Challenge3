@@ -6,18 +6,18 @@ pipeline {
             steps {
                 sh "echo Building.............................."
             }
+        }
         stage('test') {
             agent any
             steps {
                 sh "echo Testing..............................."
             }
+        }
         stage('deploy') {
             agent any
             steps {
                 sh "echo Deploying............................."
             }
-        }
-        }
         }
     }
 }
