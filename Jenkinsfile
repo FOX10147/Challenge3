@@ -5,6 +5,7 @@ pipeline {
             agent any
             steps {
                 sh "echo Building.............................."
+                sh "docker build ."
             }
         }
         stage('test') {
